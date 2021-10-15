@@ -11,40 +11,48 @@ export class PlusMinus {
 
   plus(number = 0) {
     this.result += number;
+
     return this;
   }
 
   minus(number = 0) {
     this.result -= number;
+
     return this;
   }
 
   value() {
-    return this.result;
+    let finalValue = this.result;
+    this.result = 0;
+
+    return finalValue;
   }
 }
-
-const plusMinus = new PlusMinus();
 
 /**
  * PlusM
  * prototype function patter
  */
-function PlusM() {
+export function PlusorMinus() {
   let result = 0;
 
   function plus(value = 0) {
     result += value;
+
     return this;
   }
 
   function minus(value = 0) {
     result -= value;
+
     return this;
   }
 
   function value() {
-    return result;
+    let finalValue = result;
+    result = 0;
+
+    return finalValue;
   }
 
   return {
@@ -53,17 +61,3 @@ function PlusM() {
     value,
   };
 }
-
-const plusm = new PlusM();
-
-console.log(plusm, plusMinus);
-
-function plus(value) {
-  return plusm.plus(value);
-}
-
-function minus(value) {
-  return plusm.minus(value);
-}
-
-console.log(plus(34).minus(13).plus(4).value());
