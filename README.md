@@ -8,10 +8,5 @@ Simple PlusMinus
 
 const plusMinus = new PlusMinus()
 
-function plus(number){
-  return plusMinus.plus(number)
-}
-
-function minus(number){
-  return plusMinus.minus(number)
-}
+let plus = plusMinus.plus(4).plus(9).value();
+let minus = plusMinus.minus(4).plus(9).value();
