@@ -1,4 +1,4 @@
-# js-vjjigi
+# PlusMinus
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/js-vjjigi)
 
