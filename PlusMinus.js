@@ -22,7 +22,7 @@ export class PlusMinus {
   }
 
   value() {
-    let finalValue = this.result;
+    const finalValue = this.result;
     this.result = 0;
 
     return finalValue;
@@ -49,7 +49,7 @@ export function PlusorMinus() {
   }
 
   function value() {
-    let finalValue = result;
+    const finalValue = result;
     result = 0;
 
     return finalValue;
