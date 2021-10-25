@@ -38,7 +38,7 @@ const sumEmployeeSalery = employees.reduce((prev, current) => ({
 
 const someOneInOffice = employees.filter((item) => item.isInOffice);
 
-console.table(employees);
-console.table(sumEmployeeSalery);
+console.log(employees);
+console.log(sumEmployeeSalery);
 
-console.warn(someOneInOffice);
+console.log(someOneInOffice);
