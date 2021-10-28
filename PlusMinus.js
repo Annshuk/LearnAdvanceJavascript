@@ -31,7 +31,7 @@ export class PlusMinus {
 
 /**
  * PlusM
- * prototype function patter
+ * prototype function patten
  */
 export function PlusorMinus() {
   let result = 0;
