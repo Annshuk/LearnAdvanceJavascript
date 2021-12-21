@@ -61,3 +61,32 @@ export function PlusorMinus() {
     value,
   };
 }
+/**
+ * @param {number[]} arr
+ * @return {boolean}
+ */
+export const checkIfExist = function (arr) {
+  for (let i = 0; i < arr.length; i++) {
+    let target = arr[i];
+    for (let j = i + 1; j < arr.length; j++) {
+      if (target === arr[j] * 2 || target === arr[j] / 2) {
+        return true;
+      }
+    }
+  }
+  return false;
+};
+
+export const checkIfExistHash = function (arr) {
+  let newSet = new Set();
+
+  for (let i = 0; i < arr.length; i++) {
+    if (newSet.has(arr[i] * 2) || newSet.has(arr[i] / 2)) {
+      return true;
+    }
+
+    newSet.add(arr[i]);
+  }
+
+  return false;
+};

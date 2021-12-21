@@ -14,17 +14,17 @@ function minus(value) {
 }
 
 console.log('plus =', plus(34).minus(13).plus(4).value());
-
 console.log('minus =', minus(5).plus(13).minus(4).value());
-
 console.log('plus =', plus(5).plus(13).minus(4).value());
+console.log(
+  'classplusminus',
+  plusMnus.minus(4).plus(5).plus(34).minus(6).value()
+);
 
 const addAllInteger =
   (...args) =>
   (...args1) =>
     [...args, ...args1].reduce((next, prev) => next + prev, 0);
-
-console.log(addAllInteger(1, 2, 3, 4, 5, 6)(4, 5, 6));
 
 //ansaawer 1
 const employees = [
