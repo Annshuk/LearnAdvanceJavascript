@@ -68,6 +68,7 @@ export function PlusorMinus() {
 export const checkIfExist = function (arr) {
   for (let i = 0; i < arr.length; i++) {
     let target = arr[i];
+
     for (let j = i + 1; j < arr.length; j++) {
       if (target === arr[j] * 2 || target === arr[j] / 2) {
         return true;
