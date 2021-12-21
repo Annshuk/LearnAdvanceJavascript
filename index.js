@@ -36,11 +36,11 @@ const sumEmployeeSalery = employees.reduce((prev, current) => ({
   salary: +current.salary + +prev.salary,
 }));
 
-const someOneInOffice = employees.filter((item) => item.isInOffice);
+const someoneInOffice = employees.filter((item) => item.isInOffice);
 
-console.log(employees);
+console.log(...employees);
 console.log(sumEmployeeSalery);
 
-console.log(someOneInOffice);
+console.log(...someoneInOffice);
 
-console.log(checkIfExistHash([5,2,10,15,8]));
+console.log(checkIfExistHash([5, 2, 10, 15, 8]));
