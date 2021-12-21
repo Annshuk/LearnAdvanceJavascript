@@ -1,5 +1,5 @@
 //welcome to my world
-import { PlusMinus, PlusorMinus } from './PlusMinus';
+import { PlusMinus, PlusorMinus, checkIfExistHash } from './PlusMinus';
 
 const plusOrMinus = new PlusorMinus(); // Function prototype
 
@@ -42,3 +42,5 @@ console.log(employees);
 console.log(sumEmployeeSalery);
 
 console.log(someOneInOffice);
+
+console.log(checkIfExistHash([5,2,10,15,8]));
