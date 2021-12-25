@@ -73,6 +73,7 @@ function bubbleSort2() {
 function bubbleSort() {
   let done = false;
   while (!done) {
+    done = true;
     for (let i = 0; i < array.length; i++) {
       if (array[i - 1] < array[i]) {
         done = false;
@@ -81,7 +82,6 @@ function bubbleSort() {
         array[i] = temp;
       }
     }
-    done = true;
   }
   return array;
 }
