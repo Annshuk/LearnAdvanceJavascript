@@ -85,6 +85,7 @@ function bubbleSort(array1) {
       }
     }
   }
+
   return array1;
 }
 
