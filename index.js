@@ -55,7 +55,7 @@ var fun3 = function fun3() {};
 //function declaration would be hosited
 function fun4() {}
 //sorting decending order - bubble sort
-let array = [1, 2, 4, 99, 7, 98];
+let array = [1, 2, 4, 99, 7, 340];
 
 function bubbleSort2() {
   for (let i = 0; i < array.length; i++) {
@@ -70,20 +70,20 @@ function bubbleSort2() {
   return array;
 }
 
-function bubbleSort() {
+function bubbleSort(array1) {
   let done = false;
   while (!done) {
     done = true;
-    for (let i = 0; i < array.length; i++) {
-      if (array[i - 1] < array[i]) {
+    for (let i = 0; i < array1.length; i++) {
+      if (array1[i - 1] < array1[i]) {
         done = false;
-        let temp = array[i - 1];
-        array[i - 1] = array[i];
-        array[i] = temp;
+        let temp = array1[i - 1];
+        array1[i - 1] = array1[i];
+        array1[i] = temp;
       }
     }
   }
-  return array;
+  return array1;
 }
 
-console.log(bubbleSort());
+console.log(bubbleSort([1, 2, 4, 99, 7, 98]), bubbleSort2());
