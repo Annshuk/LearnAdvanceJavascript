@@ -91,3 +91,34 @@ export const checkIfExistHash = function (arr) {
 
   return false;
 };
+
+const numbers = [
+  { value: 'One', group: 'odd' },
+  { value: 'Two', group: 'even' },
+  { value: 'Three', group: 'odd' },
+  { value: 'Three', group: 'odd' },
+  { value: 'four', group: 'even' },
+  { value: 'four', group: 'er' },
+  { value: 'four', group: 'er' },
+];
+
+const normalizeNumbers = () => {
+  // const group = numbers.reduce((prev, current) => {
+  //   let count = 0;
+
+  //   if (prev[current.group]) {
+  //     count = (prev[current.group][current.value] || 0) + 1;
+  //   }
+
+  //   prev[current.group] = {
+  //     ...prev[current.group],
+  //     [current.value]: count || 1,
+  //   };
+
+  //   return prev;
+  // }, {});
+
+  return numbers;
+};
+
+console.log(normalizeNumbers());
