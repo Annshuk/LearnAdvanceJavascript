@@ -45,15 +45,6 @@ console.log(...someoneInOffice);
 
 console.log(checkIfExistHash([5, 2, 10, 15, 8]));
 
-fun4();
-
-//function expression not hoisted
-const func1 = function () {};
-let fun2 = function () {};
-var fun3 = function fun3() {};
-
-//function declaration would be hosited
-function fun4() {}
 //sorting decending order - bubble sort
 let array = [1, 2, 4, 99, 7, 340];
 
