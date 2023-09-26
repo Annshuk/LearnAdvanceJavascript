@@ -81,3 +81,14 @@ function bubbleSort(array1) {
 }
 
 console.log(bubbleSort([1, 2, 4, 99, 7, 98]), bubbleSort2());
+
+//string occurance
+
+const senetense = 'let check how many times each letter coming';
+
+const getLetterOccurance = (str = '') =>
+  str
+    .split('')
+    .reduce((acc, current) => ({ ...acc, [current]: ++acc[current] || 1 }), {});
+
+console.log(getLetterOccurance(senetense));
